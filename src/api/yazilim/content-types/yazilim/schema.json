@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "yazilimlar",
+  "info": {
+    "singularName": "yazilim",
+    "pluralName": "yazilimlar",
+    "displayName": "Yazılım",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Baslik": {
+      "type": "string"
+    },
+    "uretimtarihi": {
+      "type": "date"
+    },
+    "Onizleme": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "har": {
+      "type": "richtext"
+    },
+    "sa": {
+      "type": "dynamiczone",
+      "components": [
+        "geg.fbe"
+      ]
+    }
+  }
+}
